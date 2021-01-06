@@ -53,6 +53,7 @@ h4 {
 }
 
 .kim_title{color: #fff;line-height: 115%;}
+.padding_title{padding-left: 78%}
 
 h4:before {
     position: absolute;
@@ -467,10 +468,11 @@ a.active {
 /* projects 1 section
 ==================================================*/
 
-
-.pj_set{width: 99%;height: 600px;margin-bottom: 3.5%;list-style: none}
+.pj_container{text-align: center}
+.pj_set{padding-bottom: 5.5%;display: inline-flex}
 .pj_set:after{display: block;content: "";clear: both}
-.pj_set>figure{float: left;width: 25%;margin: 3%}
+
+
 
 
 
@@ -675,7 +677,7 @@ a.active {
     overflow: hidden;float: left}
 .line{width: 220px;
     height: 1px;
-    background-color: #7e7e7e;
+    background-color: #cbcbcb;
     transform: rotate(-45deg)}
 
 .bg_color1{background-color: #cfdfff;width: 60px;height: 60px; border-radius: 150%;margin: 0 auto}
@@ -839,10 +841,19 @@ fieldset {
 /* Responsive media queries
 ==================================================*/
 
+@media (max-width: 1199px){
+    .pj_set>figure{
+        float: none;
+            margin: 2 auto
+    }
+    
+}
+
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
     }
+    .padding_title{padding-left: 0}
 }
 
 @media (max-width: 768px) {
@@ -850,6 +861,7 @@ fieldset {
         width: 90%;
         left: 2em;
     }
+    .pj_set{display: inline-table}
 }
 
 @media (max-width: 500px) {
