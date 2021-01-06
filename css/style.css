@@ -322,7 +322,8 @@ a.active {
     z-index: 1
 }
 
-.introduce{font-size: 1.2rem;font-weight: bold}
+.introduce{font-weight: 800;padding-right: 10px;font-size: 1.6rem}
+.intro_txt{font-size: 1.3rem;line-height: 155%}
 
 
 
